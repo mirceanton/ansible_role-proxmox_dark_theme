@@ -1,2 +1,5 @@
 ---
-# tasks file for proxmox-dark-theme/
+- name: Download theme utility
+  get_url:
+    url: https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh
+    dest: /opt/PveDiscordDark.sh
