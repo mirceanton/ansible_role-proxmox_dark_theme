@@ -1,0 +1,7 @@
+---
+- name: Download theme utility
+  get_url:
+    url: https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh
+    dest: /opt/PveDiscordDark.sh
+
+- import_tasks: "{{ 'install.yml' if install else 'uninstall.yml' }}"
