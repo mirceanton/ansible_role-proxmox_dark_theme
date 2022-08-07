@@ -1,7 +1,7 @@
 Proxmox: Dark Theme
 ===================
 
-An ansible role that (un)installs the PVE Discord Dark theme.
+An ansible role that (un)installs the [PVE Discord Dark](https://github.com/Weilbyte/PVEDiscordDark) theme by [Weilbyte](https://github.com/Weilbyte).
 
 Requirements
 ------------
