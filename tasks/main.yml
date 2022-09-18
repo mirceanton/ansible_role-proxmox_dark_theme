@@ -1,7 +1,12 @@
 ---
 - name: Download theme utility
-  get_url:
-    url: https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh
-    dest: /opt/PveDiscordDark.sh
+  ansible.builtin.get_url:
+    url: "{{ proxmox_dark_theme_link }}"
+    dest: "{{ proxmox_dark_theme_dest }}"
+    mode: "{{ proxmox_dark_theme_mode }}"
 
-- import_tasks: "{{ 'install.yml' if install else 'uninstall.yml' }}"
+- name: Run the installer
+  ansible.builtin.command: "{{ proxmox_dark_theme_cmd }}"
+  register: __theme_install__
+  changed_when: "'Theme installed' in __theme_install__.stdout"
+  failed_when: false

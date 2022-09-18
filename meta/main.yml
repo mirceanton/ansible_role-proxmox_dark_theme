@@ -1,23 +1,24 @@
 galaxy_info:
-  role_name: proxmox-dark-theme
-
   author: Mircea-Pavel ANTON
+  namespace: mirceanton
+  role_name: proxmox_dark_theme
   description: An ansible role that (un)installs the PVE Discord Dark theme.
   company: mirceanton
 
   issue_tracker_url: https://github.com/Amir-Homelab/ansible-role_proxmox-dark-theme/issues
 
   license: license (MIT)
-
-  min_ansible_version: 2.1
+  standalone: true
+  min_ansible_version: "2.1"
 
   platforms:
     - name: Proxmox VE
       versions:
-        - 7.2-7
+        - 7.2
 
   galaxy_tags:
-    - Proxmox
-    - Dark Theme
+    - proxmox
+    - dark
+    - theme
 
 dependencies: []
