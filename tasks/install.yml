@@ -1,5 +1,5 @@
 ---
 - name: Run the installer
-  shell: bash /opt/PveDiscordDark.sh install
+  ansible.builtin.command: bash /opt/PveDiscordDark.sh install
   args:
     creates: /usr/share/pve-manager/css/dd_style.css

@@ -1,7 +1,8 @@
 ---
 - name: Download theme utility
-  get_url:
+  ansible.builtin.get_url:
     url: https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh
     dest: /opt/PveDiscordDark.sh
+    mode: u=rwx,g=rx,o=r
 
 - import_tasks: "{{ 'install.yml' if install else 'uninstall.yml' }}"
