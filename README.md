@@ -31,7 +31,7 @@ To install the theme, simply include the role:
   remote_user: root
 
   roles:
-    - role: proxmox-dark-theme
+    - role: mirceanton.proxmox_dark_theme
 ```
 
 To uninstall the theme, specify `install: false` as a variable:
@@ -42,7 +42,7 @@ To uninstall the theme, specify `install: false` as a variable:
   remote_user: root
 
   roles:
-    - role: proxmox-dark-theme
+    - role: mirceanton.proxmox_dark_theme
       vars:
         install: false
 ```
