@@ -1,0 +1,6 @@
+---
+# The shell to use when launching the installer
+proxmox_dark_theme_shell: bash
+
+# The path at which the theme installer should be saved
+proxmox_dark_theme_dest: /opt/PveDiscordDark.sh
