@@ -1,6 +1,0 @@
----
-- name: Run the installer
-  ansible.builtin.command: bash /opt/PveDiscordDark.sh install
-  register: __theme_install__
-  changed_when: "'Theme installed' in __theme_install__.stdout"
-  failed_when: false
