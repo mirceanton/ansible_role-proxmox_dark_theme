@@ -1,5 +1,0 @@
----
-- name: Run the uninstaller
-  ansible.builtin.command: bash /opt/PveDiscordDark.sh uninstall
-  args:
-    removes: /usr/share/pve-manager/css/dd_style.css
