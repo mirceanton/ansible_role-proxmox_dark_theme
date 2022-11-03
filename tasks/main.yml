@@ -7,6 +7,5 @@
 
 - name: Run the installer
   ansible.builtin.command: "{{ proxmox_dark_theme_cmd }}"
-  register: __theme_install__
-  changed_when: "'Theme installed' in __theme_install__.stdout"
-  failed_when: false
+  register: __theme_install
+  changed_when: "'Theme installed' in __theme_install.stdout"

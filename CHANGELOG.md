@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.2
+
+* Removed the `proxmox_dark_theme_shell` variable.
+
 ## v1.0.1
 
 * Removed configurable toggle to install/uninstall theme. Default is now to install.

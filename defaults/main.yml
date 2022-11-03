@@ -3,7 +3,7 @@
 proxmox_dark_theme_link: https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh
 
 # The permissions for the theme installer
-proxmox_dark_theme_mode: u=rwx,g=rx,o=r
+proxmox_dark_theme_mode: u=rwx,g=rwx,o=r
 
 # The command to run the installer
-proxmox_dark_theme_cmd: "{{ proxmox_dark_theme_shell }} {{ proxmox_dark_theme_dest }} install"
+proxmox_dark_theme_cmd: "{{ proxmox_dark_theme_dest }} install"
