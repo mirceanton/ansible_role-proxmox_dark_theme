@@ -4,8 +4,16 @@
     url: "{{ proxmox_dark_theme_link }}"
     dest: "{{ proxmox_dark_theme_dest }}"
     mode: "{{ proxmox_dark_theme_mode }}"
+    owner: root
+    group: root
+
+- name: Check if theme is already installed
+  ansible.builtin.shell: "{{ proxmox_dark_theme_dest }} status"
+  register: __theme_status
+  failed_when: false
+  changed_when: false
 
 - name: Run the installer
-  ansible.builtin.command: "{{ proxmox_dark_theme_cmd }}"
-  register: __theme_install
+  ansible.builtin.command: "{{ proxmox_dark_theme_dest }} status"
+  when: __theme_status.rc == 1  
   changed_when: "'Theme installed' in __theme_install.stdout"
