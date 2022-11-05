@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.3
+
+* Added step to check if the theme is already installed before trying to (re)run the installer utility.
+
 ## v1.0.2
 
 * Removed the `proxmox_dark_theme_shell` variable.
