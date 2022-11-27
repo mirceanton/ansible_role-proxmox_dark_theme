@@ -11,9 +11,9 @@ N/A
 Role Variables
 --------------
 
-|          Variable          |  Type  |         Default          |                      Description                       |
-| :------------------------: | :----: | :----------------------: | :----------------------------------------------------: |
-| `proxmox_dark_theme_dest`  | string | `/opt/PveDiscordDark.sh` | The path at which the theme installer should be saved. |
+|         Variable          |  Type  |         Default          |                      Description                       |
+| :-----------------------: | :----: | :----------------------: | :----------------------------------------------------: |
+| `proxmox_dark_theme_dest` | string | `/opt/PveDiscordDark.sh` | The path at which the theme installer should be saved. |
 
 To check the default variables, take a look at the [defaults](defaults/main.yml) file.
 

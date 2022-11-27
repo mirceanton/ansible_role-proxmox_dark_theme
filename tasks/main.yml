@@ -14,6 +14,6 @@
   changed_when: false
 
 - name: Run the installer
-  ansible.builtin.shell: "{{ proxmox_dark_theme_dest }} status"
+  ansible.builtin.shell: "{{ proxmox_dark_theme_dest }} install"
   when: __theme_status.rc == 1
-  changed_when: "'Theme installed' in __theme_install.stdout"
+  changed_when: "'Theme installed' in __theme_status.stdout"
