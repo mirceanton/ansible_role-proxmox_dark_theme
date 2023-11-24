@@ -1,3 +1,7 @@
+<h1>
+  Since Proxmox now comes with a dark UI option by default, this repo has been archived and is now read-only!!
+</h1>
+
 Proxmox: Dark Theme
 ===================
 
